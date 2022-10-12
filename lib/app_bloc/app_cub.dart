@@ -35,7 +35,7 @@ class appcubit extends Cubit<states> {
   void getbusinessdata() {
     emit(loadingbusinessstate());
     api.getdata(url: 'v2/top-headlines', query: {
-      'country': 'eg',
+      'country': 'us',
       'category': 'business',
       'apiKey': 'ff942302e838446ba58edb4b05aa1b99'
     }).then((value) {
@@ -52,7 +52,7 @@ class appcubit extends Cubit<states> {
   void getsportssdata() {
     emit(loadingsportsstate());
     api.getdata(url: 'v2/top-headlines', query: {
-      'country': 'eg',
+      'country': 'us',
       'category': 'sports',
       'apiKey': 'ff942302e838446ba58edb4b05aa1b99'
     }).then((value) {
@@ -69,7 +69,7 @@ class appcubit extends Cubit<states> {
   void getsciencesdata() {
     emit(loadingsciencestate());
     api.getdata(url: 'v2/top-headlines', query: {
-      'country': 'eg',
+      'country': 'us',
       'category': 'science',
       'apiKey': 'ff942302e838446ba58edb4b05aa1b99'
     }).then((value) {
